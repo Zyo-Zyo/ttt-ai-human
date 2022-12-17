@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- The javascript file. -->
+    <script type="text/javascript" src="tictactoe.js"></script>
+    <title></title>
+  </head>
+  <body onload=load()>
+    <p>Simple Tic-Tac-Toe</p>
+
+    <div id="main">
+
+      <canvas id="display"
+          width="500px"
+          height="500px"
+          tabindex="0">
+      </canvas>
+
+   </div>
+
+    <input type="button"
+                id = "play"
+                name="play"
+                class="normal_button"
+                value="PLAY"
+                tabindex="1"
+                onclick="playButton(this);">
+    <div id="undercanvas">
+      <p id="winner"></p>
+    </div>
+  </body>
+</html>
